@@ -1,5 +1,18 @@
 #!/bin/sh
 
-GREETING="Hello!"
+# green.sh
+# Shell scripting test script
+# by Krystof Sara / 26. 6. 2020
 
-echo ${GREETING}
+PRINT_N_TIMES=1
+[[ $# -gt 0 && $1 -gt 0 ]] && PRINT_N_TIMES=$1 
+
+WEEKDAYS=("Sunday" "Monday" "Tuesday" "Wednesday" "Thursday" "Friday" "Saturday")
+
+GREETING="Hello $USER! It is ${WEEKDAYS[$(date +%u)]} today."
+
+# iterate over the $1 optional
+for i in $(seq 1 $PRINT_N_TIMES); do
+	echo ${GREETING};
+done
+

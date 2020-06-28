@@ -7,9 +7,9 @@
 PRINT_N_TIMES=1
 [[ $# -gt 0 && $1 -gt 0 ]] && PRINT_N_TIMES=$1 
 
-WEEKDAYS=("Sunday" "Monday" "Tuesday" "Wednesday" "Thursday" "Friday" "Saturday")
+WEEKDAYS=("Monday" "Tuesday" "Wednesday" "Thursday" "Friday" "Saturday" "Sunday")
 
-GREETING="Hello $USER! It is ${WEEKDAYS[$(date +%u)]} today."
+GREETING="Hello $USER! It is ${WEEKDAYS[$(date +%u)-1]} today."
 
 # iterate over the $1 optional
 for i in $(seq 1 $PRINT_N_TIMES); do

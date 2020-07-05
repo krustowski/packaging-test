@@ -1,0 +1,5 @@
+packaging-test (0.2-3) UNRELEASED; urgency=low
+
+  * Changed architecture target to 'all'.
+
+ -- MAINTAINER <krusty@n0p.cz>  Sun, 05 Jul 2020 16:34:26 +0200

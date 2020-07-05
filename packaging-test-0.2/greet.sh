@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # greet.sh
 # Shell scripting test script

@@ -6,7 +6,7 @@ Standards-Version: 3.9.2
 Build-Depends: debhelper (>= 9)
 
 Package: packaging-test
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Debian packaging test  
  packaging-test is a test package for CZ.NIC job application.

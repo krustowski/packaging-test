@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# green.sh
+# greet.sh
 # Shell scripting test script
 # by Krystof Sara / 26. 6. 2020
 

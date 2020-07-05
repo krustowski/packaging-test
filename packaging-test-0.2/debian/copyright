@@ -1,0 +1,9 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: packaging-test
+Upstream-Contact: tomas.krizek@mailbox.org
+Source: https://gitlab.nic.cz/knot/packaging-test/
+
+Files: *
+Copyright: 2020 Tomas Krizek <tomas.krizek@mailbox.org>
+	   2020 Krystof Sara <k@n0p.cz>
+License: GNU GPL v3

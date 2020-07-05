@@ -1,0 +1,13 @@
+[Unit]
+Description=Oneshot demo_libuv service
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/share/packaging-test/service_start.sh
+RemainAfterExit=true
+#ExecStop=
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target

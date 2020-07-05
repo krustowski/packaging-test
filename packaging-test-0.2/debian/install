@@ -1,0 +1,5 @@
+demo_libuv usr/bin
+greet.sh usr/bin
+LICENSE usr/share/packaging-test
+README.md usr/share/packaging-test
+service_start.sh usr/share/packaging-test

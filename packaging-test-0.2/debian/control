@@ -5,7 +5,8 @@ Priority: optional
 Standards-Version: 4.5.0
 Build-Depends: 	debhelper (>= 10),
 		libuv1 (>= 1.24),
-		libuv1-dev (>= 1.24) 
+		libuv1-dev (>= 1.24),
+		dh-systemd (>= 12.1)
 
 Package: packaging-test
 Architecture: all

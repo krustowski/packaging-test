@@ -9,6 +9,7 @@ demo_libuv: demo_libuv.c
 	$(CC) $(CPPFLAGS) $(CFLAGS) $(LDCFLAGS) -luv -o $@ $^
 
 install: demo_libuv
+	# Outsourced to debian/install
 	install -D demo_libuv \
 		$(DESTDIR)$(prefix)/bin/demo_libuv
 
@@ -19,5 +20,6 @@ distclean: clean
 
 uninstall:
 	-rm -f $(DESTDIR)$(prefix)/bin/demo_libuv
+	-rm -f $(DESTDIR)$(prefix)/bin/greet.sh
 
 .PHONY: all install clean distclean uninstall

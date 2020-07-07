@@ -1,5 +1,6 @@
-packaging-test (0.2-3) UNRELEASED; urgency=low
+packaging-test (0.2-4) experimental; urgency=low
 
   * Changed architecture target to 'all'.
+  * Added systemd oneshot service unit file.
 
- -- MAINTAINER <krusty@n0p.cz>  Sun, 05 Jul 2020 16:34:26 +0200
+ -- MAINTAINER <krusty@n0p.cz>  Tue, 07 Jul 2020 14:57:27 +0200

@@ -32,14 +32,15 @@ cd "$(dirname $0)"
 case $DISTRO in
 	"Debian")
 		echo "Installing the prereqs (with sudo)..."
-		sudo apt install gcc make libuv1 libuv1-dev debhelper devscripts build-essential -yy \
+		sudo apt install gcc make libuv1 libuv1-dev debhelper devscripts build-essential dh-systemd -yy \
 		       && printf "Ok.\n\n" \
 		       || die "Error occured during the installation..."
 
 		echo "Downloading the upstream tarball..."
-		wget -O "../packaging-test_0.2.orig.tar.gz" "https://gitlab.labs.nic.cz/knot/$PCKG_NAME/-/archive/v0.2/$PCKG_NAME-v$PCKG_VERSION.tar.gz" \
-			&& printf "Ok.\n\n" \
-			|| die "Error occured during the upstream tarball downloading..."
+		[[ -f "../${PCKG_NAME}_${PCKG_VERSION}.orig.tar.gz" ]] || \
+			wget -O "../packaging-test_0.2.orig.tar.gz" "https://gitlab.labs.nic.cz/knot/$PCKG_NAME/-/archive/v0.2/$PCKG_NAME-v$PCKG_VERSION.tar.gz" \
+				&& printf "Ok.\n\n" \
+				|| die "Error occured during the upstream tarball downloading..."
 
 		echo "Building the DEB package..."
 		sleep 3

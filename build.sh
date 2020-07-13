@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # build.sh
-# A universal script for automatic package building on Debian & Fedora environments
+# An universal script for automatic package building on Debian & Fedora environments
 # by Krystof Sara / 13. 7. 2020
 
 function die {

@@ -6,4 +6,4 @@ Source: https://gitlab.nic.cz/knot/packaging-test/
 Files: *
 Copyright: 2020 Tomas Krizek <tomas.krizek@mailbox.org>
 	   2020 Krystof Sara <k@n0p.cz>
-License: GNU GPL v3
+License: GPL

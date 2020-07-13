@@ -2,7 +2,7 @@ Source: packaging-test
 Maintainer: Krystof Sara <k@n0p.cz>
 Section: misc
 Priority: optional
-Standards-Version: 4.5.0
+Standards-Version: 4.3.0
 Build-Depends: 	debhelper (>= 10),
 		libuv1 (>= 1.24),
 		libuv1-dev (>= 1.24),
@@ -12,7 +12,7 @@ Package: packaging-test
 Architecture: any
 Depends: 	${shlibs:Depends}, 
 		${misc:Depends},
-		bash,
+		bash (>= 5),
 		systemd
 Description: Debian packaging test  
  packaging-test is a test package for CZ.NIC job application.

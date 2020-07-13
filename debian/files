@@ -1,2 +1,3 @@
-packaging-test_0.2-4_all.deb misc optional
-packaging-test_0.2-4_armhf.buildinfo misc optional
+packaging-test-dbgsym_0.2-5_amd64.deb debug optional automatic=yes
+packaging-test_0.2-5_amd64.buildinfo misc optional
+packaging-test_0.2-5_amd64.deb misc optional

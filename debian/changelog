@@ -2,4 +2,4 @@ packaging-test (0.2-5) experimental; urgency=low
 
   * Changed architecture target to 'any'.
 
- -- MAINTAINER Krystof Sara <k@n0p.cz> Tue, 13 Jul 2020 02:16:20 +0200
+ -- MAINTAINER Krystof Sara <k@n0p.cz>  Mon, 13 Jul 2020 02:16:20 +0200

@@ -55,13 +55,16 @@ case $DISTRO in
 			&& printf "Ok.\n\n" \
 			|| die "Error occured during the installation..."
 
-		echo "Setting the rpm tree structure..."
+		echo "Setting the RPM tree structure..."
 		rpmdev-setuptree \
 			&& printf "Ok.\n\n" \
 			|| die "The tree cannot be set..."
 
 		echo "Building the RPM package..."
 		sleep 3
+		spectool -g -R rpm/packaging-test.spec \
+			|| die "Cannot fetch the Sources and Patches..."
+
 		rpmbuild -bb rpm/packaging-test.spec \
 			&& printf "\nOk. Package is located in '$HOME/rpmbuild/RPMS' directory.\n\n" \
 			|| die "Error occured during the package building..."

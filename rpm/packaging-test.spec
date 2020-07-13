@@ -50,6 +50,7 @@ install -p -m 0644 -D %{name}.service %{buildroot}%{_unitdir}/%{name}.service
 
 %post
 %systemd_post packaging-test.service
+systemctl start packaging-test.service
 
 %preun
 %systemd_preun packaging-test.service
